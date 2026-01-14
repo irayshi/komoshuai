@@ -5,40 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Komoshuai</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.8.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo">
-                <h1>Komoshuai</h1>
-                <h4 class="font-japan" style="opacity: 0.6;">コモシュアイ</h4>
+    <nav>
+        <div class="nav__header">
+            <div class="nav__logo">
+                <a href="#">
+                    <h1>Komoshuai</h1>
+                    <h4 class="font-japan" style="opacity: 0.6;">コモシュアイ</h4>
+                </a>
             </div>
-
-            <div class="navigation">
-                <a href="#HOME">HOME</a>
-                <a href="#ARTICLES">ARTICLES</a>
-                <a href="#LIFESTYLE">LIFESTYLE</a>
-                <a href="#CULTURE">CULTURE</a>
-                <a href="#ABOUT">ABOUT</a>
+            <div class="nav__menu__btn" id="menu-btn">
+                <i class="ri-menu-4-line"></i>
             </div>
-        </nav>
-
-        <section class="hero">
-            <div class="hero-image">
-                <img src="assets/_.png" alt="">
-                <div class="circle small"></div>
-                <div class="circle big"></div>
-            </div>
-
-            <div class="caption">
-                <h1>とても美しい</h1>
-                <h4>Cantik</h4>
-            </div>
-        </section>
-
-    </header>
+        </div>
+        <ul class="nav__links" id="nav-links">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ARTICLES</a></li>
+            <li><a href="#">LIFESTYLE</a></li>
+            <li><a href="#">CULTURE</a></li>
+            <li><a href="#">ABOUT</a></li>
+        </ul>
+    </nav>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
