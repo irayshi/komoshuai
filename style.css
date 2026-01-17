@@ -19,10 +19,9 @@ img {
 a {
     text-decoration: none;
     transition: 0.3s;
-    color: white;
 }
 
-nav ul {
+ul {
     list-style: none;
 }
 
@@ -38,6 +37,10 @@ nav {
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(12px);
+}
+
+nav a {
+    color: white;
 }
 
 .nav__logo a {
@@ -71,6 +74,68 @@ nav {
 
 .nav__links a:hover {
     color: cyan;
+}
+
+header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header__image img{
+    width: 20em;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.header__content {
+    padding: 3.5em;
+}
+
+.header__content h2 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.header__content h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.header__content p {
+    margin-bottom: 1.2rem;
+}
+
+.header__btn button {
+    padding: 1em 1.5em;
+    border: none;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+
+.header__btn button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.header__socials {
+    display: flex;
+    gap: 1em;
+
+}
+
+.header__socials a {
+    color: white;
+    background-color: black;
+    padding: 8px 10px;
+    border-radius: 100%;
+}
+
+.header__socials a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 @media (width > 768px) {
@@ -107,6 +172,16 @@ nav {
     }
 
     .nav__links a {
+        display: none;
+    }
+
+    header {
+        flex-direction: column;
+    justify-content: end;
+        background-image: url(assets/header.jpeg);
+    }
+
+    .header__image {
         display: none;
     }
 }

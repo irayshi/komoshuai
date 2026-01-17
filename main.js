@@ -6,5 +6,10 @@ menuBtn.addEventListener('click', () => {
     navLinks.classList.toggle('open');
 
     const isOpen = navLinks.classList.contains('open');
-    menuBtnIcon.setAttribute('class', isOpen ? "ri-close-line" : "ri-menu-4-line")
-})
+    menuBtnIcon.setAttribute('class', isOpen ? "ri-close-line" : "ri-menu-4-line");
+});
+
+navLinks.addEventListener('click', () => {
+    navLinks.classList.remove('open');
+    menuBtnIcon.setAttribute('class', 'ri-menu-4-line');
+});
